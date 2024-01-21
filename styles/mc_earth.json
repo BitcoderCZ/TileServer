@@ -28,6 +28,7 @@
       "source-layer": "park",
       "layout": {"visibility": "none"},
       "paint": {
+        "fill-antialias": false,
         "fill-color": "#d8e8c8",
         "fill-opacity": 0.7,
         "fill-outline-color": "rgba(95, 208, 100, 1)"
@@ -51,6 +52,7 @@
       "maxzoom": 8,
       "filter": ["==", "class", "residential"],
       "paint": {
+        "fill-antialias": false,
         "fill-color": {
           "base": 1,
           "stops": [
@@ -154,7 +156,10 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["==", "class", "parking"]],
-      "paint": {"fill-color": "rgba(187, 187, 187, 1)"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgba(187, 187, 187, 1)"
+	}
     },
     {
       "id": "landuse_playground",
@@ -162,7 +167,10 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["==", "class", "playground"]],
-      "paint": {"fill-color": "rgba(170, 170, 170, 1)"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgba(170, 170, 170, 1)"
+	}
     },
     {
       "id": "landuse_other",
@@ -170,7 +178,10 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["in", "class", "industrial", "railway", "cemetery"]],
-      "paint": {"fill-color": "rgba(0, 0, 0, 1)"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgba(0, 0, 0, 1)"
+	}
     },
     {
       "id": "landuse_hospital",
@@ -179,7 +190,10 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "hospital"],
       "layout": {"visibility": "none"},
-      "paint": {"fill-color": "#fde"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "#fde"
+	}
     },
     {
       "id": "landuse_school",
@@ -188,7 +202,10 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "school"],
       "layout": {"visibility": "none"},
-      "paint": {"fill-color": "rgb(236,238,204)"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgb(236,238,204)"
+	}
     },
     {
       "id": "waterway_tunnel",
@@ -235,7 +252,10 @@
       "source": "openmaptiles",
       "source-layer": "water",
       "filter": ["all", ["!=", "brunnel", "tunnel"]],
-      "paint": {"fill-color": "rgba(153, 153, 153, 1)"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgba(153, 153, 153, 1)"
+	}
     },
     {
       "id": "landcover_sand",
@@ -243,7 +263,10 @@
       "source": "openmaptiles",
       "source-layer": "landcover",
       "filter": ["all", ["==", "class", "sand"]],
-      "paint": {"fill-color": "rgba(102, 102, 102, 1)"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgba(102, 102, 102, 1)"
+	}
     },
     {
       "id": "aeroway_fill",
@@ -252,7 +275,11 @@
       "source-layer": "aeroway",
       "minzoom": 11,
       "filter": ["==", "$type", "Polygon"],
-      "paint": {"fill-color": "rgba(0, 0, 0, 1)", "fill-opacity": 1}
+      "paint": {
+        "fill-antialias": false,
+	"fill-color": "rgba(0, 0, 0, 1)", 
+	"fill-opacity": 1
+	}
     },
     {
       "id": "aeroway_runway",
@@ -595,7 +622,10 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "Polygon"]],
-      "paint": {"fill-pattern": "pedestrian_polygon"}
+      "paint": {
+        "fill-antialias": false,
+	"fill-pattern": "pedestrian_polygon"
+	}
     },
     {
       "id": "road_motorway_link_casing",
@@ -1324,6 +1354,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "paint": {
+        "fill-antialias": false,
         "fill-color": "rgba(238, 238, 238, 1)",
         "fill-outline-color": "rgba(238, 238, 238, 1)"
       }
